@@ -23,7 +23,8 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var uploadLabel: UILabel!
     @IBOutlet weak var uploadAlert: UILabel!
-
+    @IBOutlet weak var selectPosLabel: UILabel!
+    
     // MARK: - Properties
     
     let positions = ["Frontend developer", "Backend developer", "Designer", "QA"]
@@ -50,6 +51,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     private func setupUI() {
         setupUploadPhotoView()
         setupTableView()
+        setupFonts()
     }
     
     private func setupUploadPhotoView() {
@@ -63,6 +65,33 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         positionTableView.register(UINib(nibName: "SignUpTableViewCell", bundle: nil), forCellReuseIdentifier: "SignUpTableViewCell")
         positionTableView.tableFooterView = UIView(frame: .zero)
         positionTableView.separatorStyle = .none
+    }
+    
+    private func setupFonts() {
+        if let currentPlaceholderText = nameTextField.placeholder {
+            nameTextField.attributedPlaceholder = NSAttributedString(
+                string: currentPlaceholderText,
+                attributes: [.font: UIFont.nunitoSansRegular(.body2), .foregroundColor: UIColor.lightGray]
+            )
+        }
+        
+        if let currentPlaceholderText = emailTextField.placeholder {
+            emailTextField.attributedPlaceholder = NSAttributedString(
+                string: currentPlaceholderText,
+                attributes: [.font: UIFont.nunitoSansRegular(.body2), .foregroundColor: UIColor.lightGray]
+            )
+        }
+        
+        if let currentPlaceholderText = phoneTextField.placeholder {
+            phoneTextField.attributedPlaceholder = NSAttributedString(
+                string: currentPlaceholderText,
+                attributes: [.font: UIFont.nunitoSansRegular(.body2), .foregroundColor: UIColor.lightGray]
+            )
+        }
+
+        uploadButton.titleLabel?.font = UIFont.nunitoSansRegular(.body2)
+        
+        selectPosLabel.font = UIFont.nunitoSansRegular(.body2)
     }
 
     // MARK: - Action Methods

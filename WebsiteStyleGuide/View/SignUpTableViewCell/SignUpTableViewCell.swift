@@ -14,5 +14,10 @@ class SignUpTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupFonts()
+    }
+    
+    private func setupFonts() {
+        label.font = UIFont.nunitoSansRegular(.body1) 
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4056060A2CDA745A00E6EE20 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 405606092CDA745A00E6EE20 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
+		4056060C2CDA7ABD00E6EE20 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056060B2CDA7ABD00E6EE20 /* Font.swift */; };
 		40C7ECF02CD0F3AA0005F4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7ECEF2CD0F3AA0005F4DF /* AppDelegate.swift */; };
 		40C7ECF22CD0F3AA0005F4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7ECF12CD0F3AA0005F4DF /* SceneDelegate.swift */; };
 		40C7ECF42CD0F3AA0005F4DF /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7ECF32CD0F3AA0005F4DF /* UsersViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		405606092CDA745A00E6EE20 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
+		4056060B2CDA7ABD00E6EE20 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		40C7ECEC2CD0F3AA0005F4DF /* WebsiteStyleGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebsiteStyleGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C7ECEF2CD0F3AA0005F4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C7ECF12CD0F3AA0005F4DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		40C7ED072CD109290005F4DF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4056060B2CDA7ABD00E6EE20 /* Font.swift */,
+				405606092CDA745A00E6EE20 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 				40C7ECF92CD0F3AD0005F4DF /* Assets.xcassets in Resources */,
 				40C7ECFC2CD0F3AD0005F4DF /* Base in Resources */,
 				40C7ECF72CD0F3AA0005F4DF /* Base in Resources */,
+				4056060A2CDA745A00E6EE20 /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +251,7 @@
 				40C7ED1C2CD177510005F4DF /* UserTableViewCell.swift in Sources */,
 				40EF73662CD54B6E00DC2EBF /* TryAgainViewController.swift in Sources */,
 				40C7ED192CD176A90005F4DF /* User.swift in Sources */,
+				4056060C2CDA7ABD00E6EE20 /* Font.swift in Sources */,
 				40EF732B2CD1965700DC2EBF /* NetworkManager.swift in Sources */,
 				40EF73642CD54B5800DC2EBF /* GotItViewController.swift in Sources */,
 				40C7ED062CD104810005F4DF /* ConectionViewController.swift in Sources */,
@@ -408,6 +416,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,6 +445,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

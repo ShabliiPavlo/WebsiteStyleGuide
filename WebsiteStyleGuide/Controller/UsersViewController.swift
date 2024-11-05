@@ -25,6 +25,7 @@ class UsersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupFonts() 
         setupTableView()
         fetchUsers(page: currentPage)
     }
@@ -77,6 +78,10 @@ class UsersViewController: UIViewController {
         tableView.reloadData()
     }
     
+    private func setupFonts() {
+        noUserLebel.font = UIFont.nunitoSansRegular(.hiding)
+    }
+
     // MARK: - User Management
     
     func addUser(_ newUser: User) {

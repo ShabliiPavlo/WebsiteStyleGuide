@@ -42,5 +42,14 @@ extension UserTableViewCell {
     func setupUI() {
         userImageView.layer.cornerRadius = 25
         userImageView.clipsToBounds = true
+        
+        setupFonts()
+    }
+    
+    private func setupFonts() {
+        nameLabel.font = UIFont.nunitoSansRegular(.body2)
+        positionLabel.font = UIFont.nunitoSansRegular(.body3)
+        emailLabel.font = UIFont.nunitoSansRegular(.body3)
+        phoneLabel.font = UIFont.nunitoSansRegular(.body3) 
     }
 }

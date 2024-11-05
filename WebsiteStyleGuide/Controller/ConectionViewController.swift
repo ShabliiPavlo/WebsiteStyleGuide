@@ -9,8 +9,11 @@ import UIKit
 
 class ConectionViewController: UIViewController {
     
+    @IBOutlet weak var noConnectLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         NetworkManager.shared.checkConnection { [weak self] isConnected in
             if isConnected {
                 self?.openUsersViewController()
@@ -34,5 +37,11 @@ class ConectionViewController: UIViewController {
             usersVC.modalPresentationStyle = .fullScreen
             self.present(usersVC, animated: true, completion: nil)
         }
+    }
+}
+
+extension ConectionViewController {
+  func setupUI() {
+      noConnectLabel.font = UIFont.nunitoSansRegular(.hiding)
     }
 }

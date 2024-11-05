@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eu5-05-BqL">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -207,7 +208,8 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sci-5n-uZg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="x9s-jT-cKL" firstAttribute="bottom" secondItem="sci-5n-uZg" secondAttribute="bottom" id="0U2-5e-s2Z"/>
                             <constraint firstItem="n2Q-zi-Aov" firstAttribute="trailing" secondItem="sci-5n-uZg" secondAttribute="trailing" id="39e-he-Lp5"/>
@@ -233,6 +235,7 @@
                         <outlet property="phoneLabel" destination="m3X-wk-afK" id="x2T-vJ-MA4"/>
                         <outlet property="phoneTextField" destination="lYJ-Nq-DCx" id="StW-DN-zzt"/>
                         <outlet property="positionTableView" destination="Uzs-M9-djG" id="Exl-xU-O40"/>
+                        <outlet property="selectPosLabel" destination="8uy-ka-gLp" id="Czw-0N-RYy"/>
                         <outlet property="uploadAlert" destination="Wql-UK-4nZ" id="mLl-pN-jjK"/>
                         <outlet property="uploadButton" destination="anG-LY-TVM" id="pZE-XK-5zf"/>
                         <outlet property="uploadLabel" destination="44P-Zs-6Mk" id="aME-D3-wP5"/>
@@ -274,7 +277,8 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KPo-DT-uFe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Lzj-8G-gtC" firstAttribute="top" secondItem="HBX-5O-hqs" secondAttribute="bottom" constant="24" id="2u8-Nv-dem"/>
                             <constraint firstItem="HBX-5O-hqs" firstAttribute="width" secondItem="8Fm-BI-1G5" secondAttribute="width" multiplier="0.508906" id="AP4-Su-z3J"/>
@@ -290,6 +294,9 @@
                             <constraint firstItem="HBX-5O-hqs" firstAttribute="height" secondItem="8Fm-BI-1G5" secondAttribute="height" multiplier="0.234742" id="vny-a4-dMf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noConnectLabel" destination="Lzj-8G-gtC" id="QrB-fE-ldS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zme-oc-aOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,7 +367,8 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wzk-cS-tVr" firstAttribute="top" secondItem="PJ8-L2-jap" secondAttribute="bottom" constant="24" id="1tJ-0G-fDg"/>
                             <constraint firstItem="JeB-U1-6mt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IhG-Ci-qDw"/>
@@ -422,7 +430,8 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Np3-Jn-hQO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bTu-rS-CtN" firstAttribute="centerX" secondItem="e4l-pT-I92" secondAttribute="centerX" id="9IW-la-e2m"/>
                             <constraint firstItem="UZU-XS-5Sv" firstAttribute="height" secondItem="e4l-pT-I92" secondAttribute="height" multiplier="0.234742" id="FWv-Sc-QWE"/>
@@ -438,6 +447,9 @@
                             <constraint firstItem="UZU-XS-5Sv" firstAttribute="centerX" secondItem="e4l-pT-I92" secondAttribute="centerX" id="vH6-JI-oT5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gotItLabel" destination="bTu-rS-CtN" id="c6d-Ko-GNc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hck-Qd-tM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,7 +486,8 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="orq-Jx-sIw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mIY-yL-GlO" firstAttribute="top" secondItem="uae-32-CQd" secondAttribute="bottom" constant="24" id="8td-rp-URM"/>
                             <constraint firstItem="3aG-3v-7co" firstAttribute="width" secondItem="Oh3-X8-TXS" secondAttribute="width" multiplier="0.508906" id="DmJ-sz-lAP"/>
@@ -490,6 +503,9 @@
                             <constraint firstItem="uae-32-CQd" firstAttribute="centerX" secondItem="Oh3-X8-TXS" secondAttribute="centerX" id="wsb-Ra-ck9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alredyRegisterLabel" destination="uae-32-CQd" id="gII-Kl-c6J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfZ-0w-7YH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
